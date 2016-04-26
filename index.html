@@ -8,11 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>Bare - Start Bootstrap Template</title>
+<!--Change this -->
+    <title>Basic Bootstrap Template</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+
 
     <!-- Custom CSS -->
     <style>
@@ -44,34 +48,85 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <!--Change this -->
+                <a class="navbar-brand" href="#">Bootstrap template</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">About</a>
+                        <a data-toggle="modal" data-target="#aboutModal">About</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
+                        <a data-toggle="modal" data-target="#contactModal">Contact</a>
                     </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
-        </div>
+            </div>
         <!-- /.container -->
     </nav>
+
+    <!-- aboutModal -->
+    <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="aboutModalLabel">About me</h4>
+                </div>
+                <div class="modal-body">
+                    Hi, I'm Chris Wilson. I've just completed a PhD in Biochemistry (Mechanical unfolding of proteins). I'm learning JavaScript mostly for my own amusement while I find a job. But with a possibility that I might take it up as a career depending on how it goes. You can find my code portfolio <a href="http://s.codepen.io/Rageaholic/debug/avERqr" target="_blank">here.</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /aboutModal -->
+    <!-- contactModal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="contactModalLabel">Contact me</h4>
+                </div>
+                <div class="modal-body">
+
+
+
+                        <a href="https://www.facebook.com/profile.php?id=197813131" target="_blank" class="btn btn-default btn-lg" type="button">
+                            <i class="fa fa-facebook-square"></i> Facebook
+                        </a>
+                        <br>
+                                              <a href="http://www.github.com/Rageaholic" target="_blank" class="btn btn-default btn-lg" type="button">
+                            <i class="fa fa-github"></i> Github
+                        </a>
+                    <br>
+                        <a href="https://www.linkedin.com/in/chris2097" target="_blank" class="btn btn-default btn-lg" type="button"><i class="fa fa-linkedin"></i> LinkedIn</a>
+                        <br>
+
+                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /contactModal -->
 
     <!-- Page Content -->
     <div class="container">
 
         <div class="row">
+
+
             <div class="col-lg-12 text-center">
-                <h1>A Bootstrap Starter Template</h1>
-                <p class="lead">Complete with pre-defined file paths that you won't have to change!</p>
+                <h1>Project Template</h1>
+                <p class="lead">Change this</p>
                 <ul class="list-unstyled">
                     <li>Bootstrap v3.3.6</li>
                     <li>jQuery v1.11.1</li>
@@ -79,6 +134,7 @@
             </div>
         </div>
         <!-- /.row -->
+
 
     </div>
     <!-- /.container -->
@@ -88,6 +144,9 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Additional JavaScript -->
+
 
 </body>
 
